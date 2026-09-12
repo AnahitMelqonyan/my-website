@@ -1,10 +1,8 @@
-# About me
+# Իմ մասին
 
 ![](../images/avatar-photo.jpg)
 
-Hi! I am Emma Brewer. I am an art director & graphic designer based in New York City working on branding, visual identities, editorial design and web design.
-
-Visit this website to see my work!
+Ես Անահիտն եմ: 
 
 ## My background
 
