@@ -1,7 +1,6 @@
 # Իմ մասին
 
-![](../images/avatar-photo.jpg)
-
+![Բնություն](images/green-nature-wallpaper1-copy.jpg)
 Բարեւ՛: Ես Անահիտն եմ: 
 
 ## Իմ ուղին
