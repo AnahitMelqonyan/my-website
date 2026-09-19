@@ -1,6 +1,6 @@
 # Իմ մասին
 
-![Բնություն](images/green-nature-wallpaper1-copy.jpg)
+![Բնություն](../images/week01/assignment-photo.jpg)
 Բարեւ՛: Ես Անահիտն եմ: 
 
 ## Իմ ուղին
