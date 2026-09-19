@@ -1,3 +1,4 @@
-# Բարի գալուստ իմ էջ 
+# **Բարի գալուստ իմ էջ**
 
-![](<images/sebastien-gabriel--imlv9jlb24-unsplash-1 (1).webp>)
+
+<img src="../images/week01/images/sebastien-gabriel--imlv9jlb24-unsplash-1 (1).webp" alt="Նկար" class="my-image-style">
