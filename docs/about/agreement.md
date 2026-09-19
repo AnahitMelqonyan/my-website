@@ -1,4 +1,4 @@
-# Welocome
+# Welcome
 
 This page is a placeholder.
 
