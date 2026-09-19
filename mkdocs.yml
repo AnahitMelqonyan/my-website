@@ -7,6 +7,10 @@ site_url: https://anahitmelqonyan4565-bit.github.io/my-website/
 
 theme:
   name: material
-  highlightjs: true
+  palette:
+    scheme: default
   primary: blue grey
   accent: blue
+
+extra_css:
+  - stylesheets/extra.css
