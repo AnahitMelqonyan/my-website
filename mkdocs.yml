@@ -7,10 +7,26 @@ site_url: https://anahitmelqonyan4565-bit.github.io/my-website/
 
 theme:
   name: material
+  language: hy
+  font:
+    text: Noto Sans Armenian
+    code: Roboto Mono
   palette:
     scheme: default
-  primary: blue grey
-  accent: blue
-
+    primary: custom
+    accent: custom
+  features:
+    - navigation.instant
+    - navigation.top
+    - content.code.copy
+ 
 extra_css:
   - stylesheets/extra.css
+ 
+markdown_extensions:
+  - md_in_html
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+ 
