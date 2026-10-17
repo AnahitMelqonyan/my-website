@@ -302,17 +302,25 @@ body::after  { right: 0; background: url("../images/splash.webp") no-repeat righ
 ::-webkit-scrollbar-thumb:hover { background: var(--blue); }
 
 
-/* Վերևի կանաչ շերտի (header) ներքևի եզրագիծը */
-header, .md-header {
-    border-bottom: 2px solid black !important;
+/* ---------- 15. Սև եզրագծեր (Header և sidebars) ---------- */
+
+/* Վերևի կանաչ շերտի ներքևի սև եզրագիծը */
+.md-header {
+  border-bottom: 2px solid #000 !important;
 }
 
-/* Ձախ կողմի գունավոր շերտի ձախ եզրագիծը */
-.left-sidebar, .sidebar-left {
-    border-left: 2px solid black !important;
+/* Ձախ գունավոր շերտի ձախ սև եզրագիծը (սկսվում է header-ի տակից) */
+body::before {
+  top: 48px; /* Հարմարեցված է header-ի բարձրությանը, որպեսզի սկսվի կանաչ շերտից */
+  height: calc(100vh - 48px);
+  border-left: 2px solid #000 !important;
+  box-sizing: border-box;
 }
 
-/* Աջ կողմի գունավոր շերտի ձախ եզրագիծը */
-.right-sidebar, .sidebar-right {
-    border-left: 2px solid black !important;
+/* Աջ գունավոր շերտի ձախ սև եզրագիծը (սկսվում է header-ի տակից) */
+body::after {
+  top: 48px; /* Հարմարեցված է header-ի բարձրությանը, որպեսզի սկսվի կանաչ շերտից */
+  height: calc(100vh - 48px);
+  border-left: 2px solid #000 !important;
+  box-sizing: border-box;
 }
