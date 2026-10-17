@@ -20,6 +20,7 @@ theme:
     - navigation.tabs.sticky   # սքրոլի ժամանակ մնում են վերևում
     - navigation.top
     - content.code.copy
+    - navigation.indexes
  
 extra_css:
   - stylesheets/extra.css
