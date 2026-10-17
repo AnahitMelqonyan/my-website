@@ -7,7 +7,6 @@ site_url: https://anahitmelqonyan4565-bit.github.io/my-website/
 
 theme:
   name: material
-  language: hy
   font:
     text: Noto Sans Armenian
     code: Roboto Mono
