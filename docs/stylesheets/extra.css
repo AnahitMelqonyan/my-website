@@ -200,4 +200,56 @@ body::after {
 ::-webkit-scrollbar-thumb:hover { background: var(--blue); }
 
 :focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
- 
+
+
+/* =========================================================
+   13. Կոճակները վերևում (tabs) + ձախ մենյուն փակ
+   ========================================================= */
+
+/* Վերևի բաժինների շարքը */
+.md-tabs {
+  background: linear-gradient(100deg, var(--green-900) 0%, var(--green-700) 65%, #1fa675 100%);
+  box-shadow: 0 3px 10px rgba(11, 93, 67, .25);
+}
+.md-tabs__link {
+  font-size: .78rem;
+  font-weight: 500;
+  opacity: .85;
+  margin-top: .5rem;
+  padding-bottom: .35rem;
+  transition: opacity .15s, transform .15s;
+}
+.md-tabs__link:hover { opacity: 1; transform: translateY(-1px); }
+.md-tabs__item--active .md-tabs__link {
+  opacity: 1;
+  font-weight: 700;
+  box-shadow: inset 0 -3px 0 var(--yellow);
+}
+
+/* «☰ Մենյու» կոճակ (միայն մեծ էկրանին) */
+.menu-toggle {
+  display: none;
+  align-items: center;
+  gap: .4rem;
+  margin: 0 .6rem;
+  padding: .35rem .95rem;
+  border: 2px solid rgba(255, 255, 255, .85);
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-size: .75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.menu-toggle:hover,
+.menu-toggle[aria-expanded="true"] { background: var(--blue); border-color: var(--blue); }
+
+@media (min-width: 76.25em) {
+  .menu-toggle { display: inline-flex; }
+
+  /* ձախ մենյուն լռելյայն փակ է */
+  .md-sidebar--primary { display: none; }
+  body.nav-open .md-sidebar--primary { display: block; }
+}
