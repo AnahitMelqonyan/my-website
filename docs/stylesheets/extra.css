@@ -309,18 +309,20 @@ body::after  { right: 0; background: url("../images/splash.webp") no-repeat righ
   border-bottom: 2px solid #000 !important;
 }
 
-/* Ձախ գունավոր շերտի ձախ սև եզրագիծը (սկսվում է header-ի տակից) */
+/* Ձախ գունավոր շերտի ձախ սև եզրագիծը */
 body::before {
-  top: 48px; /* Հարմարեցված է header-ի բարձրությանը, որպեսզի սկսվի կանաչ շերտից */
+  top: 48px; /* Սկսվում է header-ի տակից */
   height: calc(100vh - 48px);
   border-left: 2px solid #000 !important;
   box-sizing: border-box;
 }
 
-/* Աջ գունավոր շերտի ձախ սև եզրագիծը (սկսվում է header-ի տակից) */
+/* Աջ գունավոր շերտի ձախ սև եզրագիծը */
 body::after {
-  top: 48px; /* Հարմարեցված է header-ի բարձրությանը, որպեսզի սկսվի կանաչ շերտից */
+  top: 48px; /* Սկսվում է header-ի տակից */
   height: calc(100vh - 48px);
   border-left: 2px solid #000 !important;
   box-sizing: border-box;
+  left: calc(100vw - 120px); /* Հստակ դիրքավորում է աջ շերտի ձախ եզրը */
+  right: auto;
 }
