@@ -253,3 +253,112 @@ body::after {
   .md-sidebar--primary { display: none; }
   body.nav-open .md-sidebar--primary { display: block; }
 }
+
+/* =========================================================
+   16. Նոր գեղեցկացումներ՝ տաք, արվեստային, խաղային
+   ========================================================= */
+
+/* --- 16.1 Բովանդակությունը՝ «թղթի թերթի» պես փափուկ վահանակի մեջ --- */
+.md-content__inner {
+  background: rgba(255, 255, 255, .42);
+  border: 2px solid rgba(255, 255, 255, .7);
+  border-radius: 22px;
+  padding: 1rem 1.6rem 1.4rem;
+  margin-top: 1.2rem;
+  box-shadow: 0 10px 30px rgba(11, 93, 67, .10);
+}
+
+/* --- 16.2 Ձախ շերտի վրա ներկի կետեր (վարդագույն, դեղին, անանուխ) --- */
+.md-main::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 30% 9%,  var(--yellow) 0 9px,  transparent 10px),
+    radial-gradient(circle at 62% 17%, var(--pink)   0 5px,  transparent 6px),
+    radial-gradient(circle at 24% 29%, var(--green-300) 0 7px, transparent 8px),
+    radial-gradient(circle at 55% 38%, var(--yellow) 0 4px,  transparent 5px),
+    radial-gradient(circle at 34% 49%, var(--pink)   0 10px, transparent 11px),
+    radial-gradient(circle at 68% 58%, var(--green-300) 0 5px, transparent 6px),
+    radial-gradient(circle at 28% 69%, var(--yellow) 0 6px,  transparent 7px),
+    radial-gradient(circle at 60% 78%, var(--pink)   0 8px,  transparent 9px),
+    radial-gradient(circle at 36% 88%, var(--green-300) 0 9px, transparent 10px),
+    radial-gradient(circle at 64% 95%, var(--yellow) 0 5px,  transparent 6px);
+}
+@media (max-width: 76.1875em) { .md-main::before { display: none; } }
+
+/* --- 16.3 Մարկերով ընդգծում --- */
+.md-typeset h2 {
+  display: inline-block;
+  background: linear-gradient(transparent 62%, rgba(255, 210, 63, .7) 62%);
+  padding: 0 .25em;
+  margin-left: -.25em;
+}
+.md-typeset h3 {
+  border-left: 5px solid var(--pink);
+  padding-left: .6em;
+}
+.md-typeset mark {
+  background: linear-gradient(transparent 50%, var(--yellow) 50%);
+  color: inherit;
+  padding: 0 .15em;
+}
+
+/* --- 16.4 Քարտեր (նախագծերի համար) --- */
+.md-typeset .grid.cards > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.1rem;
+  list-style: none;
+  margin: 1.2em 0;
+  padding: 0;
+}
+.md-typeset .grid.cards > ul > li {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  background: var(--paper);
+  border: 2px solid var(--green-700);
+  border-radius: 18px;
+  box-shadow: 6px 6px 0 var(--pink-soft);
+  transition: transform .18s, box-shadow .18s, border-color .18s;
+}
+.md-typeset .grid.cards > ul > li:nth-child(even) { box-shadow: 6px 6px 0 var(--yellow); }
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translate(-3px, -3px);
+  border-color: var(--blue);
+  box-shadow: 10px 10px 0 var(--pink);
+}
+.md-typeset .grid.cards > ul > li:nth-child(even):hover { box-shadow: 10px 10px 0 #f2b800; }
+.md-typeset .grid.cards > ul > li > hr { border-color: var(--green-200); }
+
+/* --- 16.5 «Վերև» կոճակ --- */
+.md-top {
+  background: var(--blue);
+  color: #fff;
+  border-radius: 999px;
+  box-shadow: 0 4px 0 var(--blue-deep);
+}
+.md-top:hover { background: var(--blue-deep); color: #fff; }
+
+/* --- 16.6 Ալիքաձև եզրագիծ ներքևի մասի վերևում --- */
+.md-footer { position: relative; margin-top: 28px; }
+.md-footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -27px;
+  height: 28px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='28' viewBox='0 0 80 28' preserveAspectRatio='none'%3E%3Cpath d='M0,28 V14 C10,0 30,0 40,14 C50,28 70,28 80,14 V28 Z' fill='%230b5d43'/%3E%3C/svg%3E") repeat-x left bottom / 80px 28px;
+  pointer-events: none;
+}
+
+/* --- 16.7 Փոքր էկրաններին վահանակը ավելի թեթև --- */
+@media (max-width: 44.9375em) {
+  .md-content__inner { border-radius: 14px; padding: .6rem .9rem 1rem; }
+}
