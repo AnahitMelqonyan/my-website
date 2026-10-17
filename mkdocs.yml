@@ -16,11 +16,16 @@ theme:
     accent: custom
   features:
     - navigation.instant
+    - navigation.tabs          # բաժինները վերևում՝ կոճակների տեսքով
+    - navigation.tabs.sticky   # սքրոլի ժամանակ մնում են վերևում
     - navigation.top
     - content.code.copy
  
 extra_css:
   - stylesheets/extra.css
+ 
+extra_javascript:
+  - javascripts/menu-toggle.js
  
 markdown_extensions:
   - md_in_html
