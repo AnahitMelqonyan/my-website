@@ -300,3 +300,19 @@ body::after  { right: 0; background: url("../images/splash.webp") no-repeat righ
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-thumb { background: var(--green-700); border-radius: 10px; border: 2px solid var(--paper); }
 ::-webkit-scrollbar-thumb:hover { background: var(--blue); }
+
+
+/* Վերևի կանաչ շերտի (header) ներքևի եզրագիծը */
+header, .md-header {
+    border-bottom: 2px solid black !important;
+}
+
+/* Ձախ կողմի գունավոր շերտի ձախ եզրագիծը */
+.left-sidebar, .sidebar-left {
+    border-left: 2px solid black !important;
+}
+
+/* Աջ կողմի գունավոր շերտի ձախ եզրագիծը */
+.right-sidebar, .sidebar-right {
+    border-left: 2px solid black !important;
+}
